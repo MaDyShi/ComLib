@@ -55,7 +55,18 @@ public class SpUtils {
         }
         return backInt;
     }
-
+    public void setBool(String key,boolean bool){
+        if (TextUtils.isEmpty(key))
+            return;
+        sp.edit().putBoolean(key,bool).commit();
+    }
+    public boolean getBool(String key){
+        boolean bool = false;
+        if (!TextUtils.isEmpty(key)){
+            bool = sp.getBoolean(key,false);
+        }
+        return bool;
+    }
 
 
 }
