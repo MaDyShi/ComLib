@@ -56,6 +56,7 @@ public class SpUtils {
         }
         return backInt;
     }
+    // 设置布尔
     public void setBool(String key,boolean bool){
         if (TextUtils.isEmpty(key))
             return;
