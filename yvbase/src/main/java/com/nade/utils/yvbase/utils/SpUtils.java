@@ -28,7 +28,7 @@ public class SpUtils {
         }
         return sp;
     }
-
+        // 设置string
     public void setString(String key,String value){
         if (TextUtils.isEmpty(key))
             return;
