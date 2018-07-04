@@ -36,6 +36,7 @@ public class SpUtils {
             return;
         sp.edit().putString(key,value).commit();
     }
+    // 设置int
     public void setInt(String key,int value){
         if (TextUtils.isEmpty(key))
             return;
